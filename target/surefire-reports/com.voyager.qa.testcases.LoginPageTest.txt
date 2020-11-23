@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.voyager.qa.testcases.LoginPageTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.531 sec <<< FAILURE!
+setUp(com.voyager.qa.testcases.LoginPageTest)  Time elapsed: 0.371 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/google/common/collect/ImmutableMap
+	at org.openqa.selenium.remote.service.DriverService$Builder.<init>(DriverService.java:250)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.<init>(GeckoDriverService.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:164)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
+	at com.voyager.qa.base.TestBase.intialization(TestBase.java:44)
+	at com.voyager.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:24)
+Caused by: java.lang.ClassNotFoundException: com.google.common.collect.ImmutableMap
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 44 more
+
